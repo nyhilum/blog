@@ -1,6 +1,8 @@
 - name: /home
   link: /
-- name: /shitposts
-  link: /shitposts/
+- name: /notebook
+  link: /notebook/
+- name: /writings
+  link: /writings/
 - name: /whoami
   link: /whoami/
