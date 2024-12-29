@@ -17,7 +17,7 @@ a:hover {
       0 0 5px $header-shadow,
       0 0 10px $header-shadow;
     font-weight: normal;
-    //margin-bottom: $head-bottom-margin;
+    margin-bottom: $head-bottom-margin;
   }
 }
 
@@ -47,6 +47,7 @@ code {
 
 blockquote {
   border-left: solid 1px;
+  border-left-color: $border-color;
   padding-left: 10px;
   padding-right: 10px;
   margin-left: 20px;
