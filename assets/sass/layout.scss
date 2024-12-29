@@ -1,6 +1,7 @@
 .page-title {
   font-size: 24px;
   color: $header-color;
+  text-shadow: $header-shadow;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -81,4 +82,9 @@
 .verbatim {
   color: $inline-color;
   text-shadow: $inline-shadow;
+}
+
+.references {
+  color: $primary-color;
+  text-shadow: $primary-shadow;
 }
