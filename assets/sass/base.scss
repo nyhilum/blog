@@ -54,6 +54,11 @@ blockquote {
   margin-right: 20px;
 }
 
+header {
+  border-bottom: solid $border-color;
+  padding-bottom: 15px;
+}
+
 footer {
   border-top: solid $border-color;
   padding-top: 15px;
