@@ -2,9 +2,12 @@ name: "deploy hugo"
 
 on:
   push:
+    paths-ignore:
+      - ".github/**"
+      - "readme.org"
+      - "**.txt"
     branches: [master]
   workflow_dispatch:
-  workflow_call:
 
 permissions:
   contents: read
@@ -36,13 +39,12 @@ jobs:
         with:
           app-id: ${{ vars.APP_ID }}
           private-key: ${{ secrets.PRIVATE_KEY }}
-          repositories: "blog,content"
+          repositories: "content"
 
       - name: "checkout"
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          token: ${{ steps.app-token.outputs.token }}
 
       - name: "checkout content"
         uses: actions/checkout@v4
