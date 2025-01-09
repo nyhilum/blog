@@ -12,10 +12,7 @@ a:hover {
   h#{index($header-font-sizes,$size)} {
     font-size: $size;
     color: $header-color;
-    text-shadow:
-      0 1px 1px rgba(0, 0, 0, 0.1),
-      0 0 5px $header-shadow,
-      0 0 10px $header-shadow;
+    text-shadow: $header-shadow;
     font-weight: normal;
     margin-bottom: $head-bottom-margin;
   }
