@@ -5,4 +5,5 @@
     {{ if isset .Params "subtitle" }}
     <p class="post-subtitle">{{ index .Params "subtitle" }}</p>
     {{ end }}
+    {{ partial "tags.html" . }}
 </div>

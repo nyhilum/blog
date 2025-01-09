@@ -22,13 +22,7 @@
                 </a>
             </p>
         {{ end }}
-        {{ if isset .Params "tags" }}
-            <p class="tags">
-                {{ range .Params.tags }}
-                    <a href="{{ "/tags/" | relURL }}{{ . | urlize }}">[#{{ . }}]</a>
-                {{ end }}
-            </p>
-        {{ end }}
+        {{ partial "tags.html" . }}
         {{ if isset .Params "date" }}
             {{ $date := .Date.Format "2006-01-02" }}
             {{ $lastmod := .Lastmod.Format "2006-01-02" }}

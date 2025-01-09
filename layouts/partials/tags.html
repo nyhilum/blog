@@ -1,0 +1,7 @@
+{{ if isset .Params "tags" }}
+    <p class="tags">
+        {{ range .Params.tags }}
+            [<a href="{{ "/tags/" | relURL }}{{ . | urlize }}">#{{ . }}</a>]
+        {{ end }}
+    </p>
+{{ end }}
