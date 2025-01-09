@@ -3,7 +3,7 @@
       [{{ .Date.Format "2006-01-02" }}] {{ .LinkTitle }}
     </a>
     {{ if isset .Params "subtitle" }}
-    <p class="post-subtitle">{{ index .Params "subtitle" }}</p>
+    <p class="post-subtitle">{{ .Params.subtitle }}</p>
     {{ end }}
     {{ partial "tags.html" . }}
 </div>

@@ -4,21 +4,25 @@
         <p class="page-title">
             {{ if isset .Params "title" }}
                 {{ .Params.title }}
+            {{ else if isset .Page.Data "tag" }}
+                {{ .Page.Data.Term }}
             {{ else }}
                 {{ .Site.Title }}
             {{ end }}
         </p>
         <p class="page-subtitle">
             {{ if isset .Params "subtitle" }}
-                {{ index .Params "subtitle" }}
+                {{ .Params.subtitle }}
+            {{ else if isset .Page.Data "tag" }}
+                {{ .Site.Params.subtitleTag }}
             {{ else }}
                 {{ .Site.Params.subtitle }}
             {{ end }}
         </p>
         {{ if isset .Params "ref_name" }}
             <p class=reference>[𝄞]:
-                <a href={{ index .Params.ref_link }} target="_blank" rel="noopener noreferrer">
-                    {{ index .Params.ref_name }}
+                <a href={{ .Params.ref_link }} target="_blank" rel="noopener noreferrer">
+                    {{ .Params.ref_name }}
                 </a>
             </p>
         {{ end }}

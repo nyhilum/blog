@@ -6,6 +6,7 @@ enableGitInfo = true
     lastmod = ["lastmod", ":git", "date", "publishDate"]
 [params]
     subtitle = 'look at you, hacker.'
+    subtitleTag = "you're it"
     dateFormat = '2006-01-02'
 [markup]
     defaultMarkdownHandler = 'org'

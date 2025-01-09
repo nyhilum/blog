@@ -1,0 +1,5 @@
+{{ define "main" }}
+<ul class="post-list">
+  {{ range .Data.Pages }} {{ partial "mid.html" . }} {{ end }}
+</ul>
+{{ end }}
