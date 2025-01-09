@@ -7,18 +7,18 @@
 }
 
 .page-subtitle,
-.post-subtitle,
-.reference {
+.post-subtitle {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   color: $primary-color;
   text-shadow: $primary-shadow;
 }
 
-.page-tag-list {
+.tags,
+.reference {
   font-size: 14px;
-  margin-top: 5px;
-  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 5px;
   color: $primary-color;
   text-shadow: $primary-shadow;
 }
@@ -38,14 +38,6 @@
   text-shadow: $primary-shadow;
   list-style-type: none;
   padding: 0;
-}
-
-.tag-list {
-  font-size: 14px;
-  margin-top: 5px;
-  margin-bottom: 16px;
-  color: $primary-color;
-  text-shadow: $primary-shadow;
 }
 
 .lineno {
