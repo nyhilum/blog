@@ -25,7 +25,7 @@ jobs:
             '!.github'
             '!_drafts'
             '!readme.org'
-            '/*'
+            '/'
           path: content
           token: ${{ steps.app-token.outputs.token }}
       - name: "listings"
