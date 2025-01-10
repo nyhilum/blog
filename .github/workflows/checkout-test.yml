@@ -22,8 +22,8 @@ jobs:
         with:
           repository: "nyhilum/content"
           sparse-checkout: |
-            '!.github/**'
-            '!_drafts/**'
+            '!.github'
+            '!_drafts'
             '!readme.org'
             '/*'
           path: content
