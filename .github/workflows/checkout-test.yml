@@ -31,4 +31,4 @@ jobs:
         run: |
           ls -la
           cd content
-          ls -la
+          tree
