@@ -22,10 +22,11 @@ jobs:
         with:
           repository: "nyhilum/content"
           sparse-checkout: |
-            '!.github/'
-            '!_drafts/'
+            '!.github/**'
+            '!_drafts/**'
             '!readme.org'
-            '/'
+            '/*'
+          sparse-checkout-cone-mode: false
           path: content
           token: ${{ steps.app-token.outputs.token }}
       - name: "listings"
