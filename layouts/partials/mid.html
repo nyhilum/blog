@@ -1,6 +1,10 @@
 <div class="post-item">
     <a href="{{ .RelPermalink }}" class="post-link">
-      [{{ .Date.Format "2006-01-02" }}] {{ .LinkTitle }}
+        {{ if in .Section "tags" }}
+            [#{{ lower .Title }}]
+        {{ else  }}
+            [{{ .Date.Format "2006-01-02" }}] {{ .LinkTitle }}
+        {{ end }}
     </a>
     {{ if isset .Params "subtitle" }}
     <p class="post-subtitle">{{ .Params.subtitle }}</p>

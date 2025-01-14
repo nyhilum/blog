@@ -5,7 +5,7 @@
             {{ if isset .Params "title" }}
                 {{ .Params.title }}
             {{ else if isset .Page.Data "tag" }}
-                {{ .Page.Data.Term }}
+                #{{ .Page.Data.Term }}
             {{ else }}
                 {{ .Site.Title }}
             {{ end }}
