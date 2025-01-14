@@ -1,13 +1,14 @@
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{ $opts := dict "transpiler" "libsass" "targetPath" "css/style.css" }}
     {{ with resources.Get "sass/main.scss" | css.Sass $opts }}
         <link rel="stylesheet" href="{{ .RelPermalink }}">
     {{ end }}
     <link rel="icon" href="/favicon.ico">
     {{ if isset .Params "title" }}
-    <title>{{ .Site.Title }} | {{ .Params.title }}</title>
+        <title>{{ .Site.Title }} | {{ .Params.title }}</title>
     {{ else }}
-    <title>{{ .Site.Title }}</title>
+        <title>{{ .Site.Title }}</title>
     {{ end }}
 </head>
