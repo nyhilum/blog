@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'nyhil'
 enableGitInfo = true
 [frontmatter]
-    lastmod = ["lastmod", ":git", "date", "publishDate"]
+    lastmod = [':fileModTime', ':default']
 [params]
     subtitle = 'look at you, hacker.'
     subtitleTag = "you're it"
