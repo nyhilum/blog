@@ -51,6 +51,7 @@ jobs:
           sparse-checkout: |
             notebook
             posts
+            thoughts
             writings
           path: content
           token: ${{ steps.app-token.outputs.token }}
