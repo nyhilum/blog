@@ -2,6 +2,8 @@
   link: /
 - name: /notebook
   link: /notebook/
+- name: /thoughts
+  link: /thoughts/
 - name: /writings
   link: /writings/
 - name: /whoami
